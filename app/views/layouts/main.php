@@ -1,36 +1,35 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Шаблон Main</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .menu{
-            height: 50px;
-            width: 100%;
-            background-color: #D57C7C;
-        }
-        .footer{
-            width: 100%;
-            height: 50px;
-            background-color: #D57C7C;
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/posts.css">
 
-        }
-    </style>
 </head>
 <body>
-    <div class="menu">
-        <p>Это шаблон меню</p>
+<div class="main">
+
+    <div class="head">
+        <div class="img" style="background-image: url();"></div>
+        <div class="name">Dmitry</div>
+        <a class="add" href="">Добавить статью<img src="images/add.png" alt=""></a>
+        <a class="logout" href="">Выход</a>
     </div>
-    <?= $content; ?>
-    <div class="footer">
-        <p>2018</p>
+    <form action="session.php" method="GET">
+        <input type="text" name="name" id="">
+        <input type="text" name="surname" id="">
+        <input type="submit" name="submit" id="">
+    </form>
+
+    <div class="posts">
+        <h2>Список статей</h2>
     </div>
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 </html>
