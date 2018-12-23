@@ -1,0 +1,17 @@
+{
+    "name": "gladkix/framework",
+    "authors": [
+        {
+            "name": "Gladkix",
+            "email": "tech75rus@mail.ru"
+        }
+    ],
+    "require" : {},
+    "autoload" : {
+        "psr-4" :{
+            "app\\controllers\\" : "app/controllers/",
+            "app\\models\\" : "app/models/",
+            "vendor\\core\\" : "vendor/core/"
+        }
+    }
+}
